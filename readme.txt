@@ -9,7 +9,7 @@ Author: iLen
 Requires at least: 3.0
 Tested up to: 4.0
 Stable tag: 1.7
-Version: 1.8
+Version: 1.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,6 +48,8 @@ The plugin has some customization features, one of the best is that it has stats
 
 
 == Changelog ==
+= 1.9 =
+* update <code>iLenFramework</code> 1.6.6
 = 1.8 =
 * Fix core.php (3)
 = 1.7 =
