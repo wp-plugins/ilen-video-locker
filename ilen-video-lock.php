@@ -139,7 +139,7 @@ class ilen_video_lock extends ilen_video_lock_make{
 
         global $option_ilenvideolock;
 
-        wp_enqueue_script('facebook-js', 'http://connect.facebook.net/en_US/all.js#xfbml=1', array('jquery'),$this->parameter['version'],FALSE);
+        wp_enqueue_script('facebook-js', 'https://connect.facebook.net/en_US/all.js#xfbml=1', array('jquery'),$this->parameter['version'],FALSE);
         
 
         wp_enqueue_style( 'front-'.$this->parameter["name_option"], plugins_url('/assets/css/front.css',__FILE__),'all',$this->parameter['version']);
