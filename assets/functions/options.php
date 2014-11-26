@@ -40,7 +40,7 @@ class ilen_video_lock_make{
                      'name_option'    =>'ilen_video_lock',
                      'name_plugin_url'=>'ilen-video-locker',
                      'descripcion'    =>'Share your viral videos and get traffic to your website.',
-                     'version'        =>'1.9.3',
+                     'version'        =>'2.0',
                      'db_version'     =>'1.0',
                      'url'            =>'', 
                      'logo'           =>'<i class="fa fa fa-play" style="padding:10px 10px 9px 15px"></i>',
@@ -51,6 +51,7 @@ class ilen_video_lock_make{
                      'languages'      => "$url_plugin/ilen-video-locker/assets/languages",
                      'twitter'        => 'https://twitter.com/intent/tweet?text=View this awesome plugin WP;url=http://bit.ly/1sRMvlf&amp;via=iLenElFuerte',
                      'wp_review'      => 'https://wordpress.org/support/view/plugin-reviews/ilen-video-locker?filter=5',
+                     'wp_support'     => 'https://wordpress.org/support/plugin/ilen-video-locker',
                      'type'           =>'plugin-tabs',
                      'method'         =>'free',
                      'themeadmin'     =>'fresh');
