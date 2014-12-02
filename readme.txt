@@ -12,7 +12,7 @@ Stable tag: 2.1
 Version: 2.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-
+Donate link:https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ASU4AAQM8N5NL
 
 Share your viral videos and get traffic to your website.
 
