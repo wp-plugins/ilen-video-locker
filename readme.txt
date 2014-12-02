@@ -9,7 +9,7 @@ Author: iLen
 Requires at least: 3.0
 Tested up to: 4.0
 Stable tag: 2.1
-Version: 2.2
+Version: 2.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -50,6 +50,8 @@ The plugin has some customization features, one of the best is that it has stats
 
 
 == Changelog ==
+= 2.3  =
+Add button DONATE
 = 2.2 =
 * Update core <code>iLenFramework 1.7.3</code>
 = 2.1 =
