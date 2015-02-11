@@ -3,7 +3,7 @@
 Plugin Name: iLen Video Locker
 Plugin URI: https://wordpress.org/plugins/ilen-video-locker/
 Description: Share your viral videos and get traffic to your website.
-Version: 2.5
+Version: 2.6
 Author: iLen
 Author URI:
 */
@@ -167,13 +167,11 @@ class ilen_video_lock extends ilen_video_lock_make{
 
     function show_ilenvideolock( $atts, $content = null ){
 
-        global $if_utils;
+        global $if_utils,$post, $option_ilenvideolock;
 
         if ( !is_singular() )
                 return;
-        
-        global $post, $option_ilenvideolock;
-
+ 
         $type_video = "";
 
         if( isset($option_ilenvideolock->video_thumbnail) && $option_ilenvideolock->video_thumbnail  ){
@@ -184,7 +182,7 @@ class ilen_video_lock extends ilen_video_lock_make{
             
         }else{
 
-            $image_share = $if_utils->IF_get_image( "medium" );
+            $image_share = $if_utils->IF_get_image( "medium", null, $post->ID  );
             $id_video    = $content;
             $image_share = $image_share["src"];
 
@@ -254,7 +252,7 @@ class ilen_video_lock extends ilen_video_lock_make{
                 if( isset($matches[5][0]) )
                     $url_youtube = $matches[5][0];
 
-                    $image_share =   $if_utils->IF_get_image( "medium",  $if_utils->IF_getyoutubeThumbnail( $if_utils->IF_getyoutubeID( $url_youtube ) ) );
+                    $image_share =   $if_utils->IF_get_image( "medium",  $if_utils->IF_getyoutubeThumbnail( $if_utils->IF_getyoutubeID( $url_youtube ) ), $post->ID );
                     $image_share = $image_share["src"];
                     echo '<meta property="og:image" content="'.$image_share.'"/>';    
             }
