@@ -7,9 +7,9 @@ Tags: wp video lock, wp video locker, lock video youtube, unlock video, unlock v
 Author URI: http://es.ilentheme.com
 Author: iLen
 Requires at least: 3.0
-Tested up to: 4.0
-Stable tag: 2.1
-Version: 2.3
+Tested up to: 4.1
+Stable tag: 2.5
+Version: 2.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Donate link:https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ASU4AAQM8N5NL
@@ -50,6 +50,8 @@ The plugin has some customization features, one of the best is that it has stats
 
 
 == Changelog ==
+= 2.5 =
+* Update core <code>iLenFramework 2.0</code>
 = 2.3  =
 Add button DONATE
 = 2.2 =

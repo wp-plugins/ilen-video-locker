@@ -3,7 +3,7 @@
 Plugin Name: iLen Video Locker
 Plugin URI: https://wordpress.org/plugins/ilen-video-locker/
 Description: Share your viral videos and get traffic to your website.
-Version: 2.3
+Version: 2.5
 Author: iLen
 Author URI:
 */
@@ -13,7 +13,8 @@ if ( !class_exists('ilen_video_lock') ) {
 
 define('IVL_PATH',plugin_dir_path( __FILE__ ));
 
-require_once 'assets/functions/options.php';
+require_once 'assets/ilenframework/assets/lib/utils.php'; // get utils
+require_once 'assets/functions/options.php'; // get options plugins
 require_once "assets/ilenframework/assets/lib/Mobile_Detect.php";
 
 class ilen_video_lock extends ilen_video_lock_make{
@@ -21,9 +22,8 @@ class ilen_video_lock extends ilen_video_lock_make{
     var $mobil_detect = null;
     function __construct(){
 
-        // get utils framework:IF_get_option
-        require_once 'assets/ilenframework/assets/lib/utils.php';
-
+        global $if_utils;
+ 
         // ajax nonce for stats
         add_action( 'wp_ajax_nopriv_ajax-video', array( &$this, 'my_shared_video' ) );
         add_action( 'wp_ajax_ajax-video', array( &$this, 'my_shared_video' ) );
@@ -59,7 +59,7 @@ class ilen_video_lock extends ilen_video_lock_make{
             add_shortcode('ilenvideolock', array( &$this,'show_ilenvideolock') );
 
             // get option plugin
-            $option_ilenvideolock = IF_get_option( $this->parameter['name_option'] );
+            $option_ilenvideolock = $if_utils->IF_get_option( $this->parameter['name_option'] );
 
             // add filter on hook wp_head
             add_filter('wp_head', array( &$this,'add_fb_meta_image') );
@@ -167,6 +167,8 @@ class ilen_video_lock extends ilen_video_lock_make{
 
     function show_ilenvideolock( $atts, $content = null ){
 
+        global $if_utils;
+
         if ( !is_singular() )
                 return;
         
@@ -177,12 +179,12 @@ class ilen_video_lock extends ilen_video_lock_make{
         if( isset($option_ilenvideolock->video_thumbnail) && $option_ilenvideolock->video_thumbnail  ){
 
             
-            $image_share = IF_getyoutubeThumbnail( $id_video = IF_getyoutubeID( $content ) ) ;    
+            $image_share = $if_utils->IF_getyoutubeThumbnail( $id_video = $if_utils->IF_getyoutubeID( $content ) ) ;    
             
             
         }else{
 
-            $image_share = IF_get_image( "medium" );
+            $image_share = $if_utils->IF_get_image( "medium" );
             $id_video    = $content;
             $image_share = $image_share["src"];
 
@@ -235,6 +237,9 @@ class ilen_video_lock extends ilen_video_lock_make{
 
     // Add items to the header!
     function add_fb_meta_image() {
+
+        global $if_utils;
+
         if(  is_singular() ){
 
             // get shortcode 'ilenvideolock' on content post
@@ -249,7 +254,7 @@ class ilen_video_lock extends ilen_video_lock_make{
                 if( isset($matches[5][0]) )
                     $url_youtube = $matches[5][0];
 
-                    $image_share =   IF_get_image( "medium",  IF_getyoutubeThumbnail( IF_getyoutubeID( $url_youtube ) ) );
+                    $image_share =   $if_utils->IF_get_image( "medium",  $if_utils->IF_getyoutubeThumbnail( $if_utils->IF_getyoutubeID( $url_youtube ) ) );
                     $image_share = $image_share["src"];
                     echo '<meta property="og:image" content="'.$image_share.'"/>';    
             }
