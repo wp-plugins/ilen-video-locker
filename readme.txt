@@ -17,6 +17,9 @@ Donate link:https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id
 Share your viral videos and get traffic to your website.
 
 == Description ==
+<blockquote>
+  <p>Support for this plugin will only be served <a href="http://support.ilentheme.com" target="_blank">HERE</a></p>
+</blockquote>
 <h3>Get 200% traffic to your website through your videos.!!</h3>
 <strong>iLen Video Locker</strong> Share your viral videos youtube and get traffic to your website.<br />
 It is a plugin that allows you to view videos from YouTube, the video is blocked until the visitor share in one of the social networks the video, once you share video will unlock and reproduced. 
