@@ -6,10 +6,10 @@ Plugin URI: https://wordpress.org/plugins/ilen-video-locker/
 Tags: wp video lock, wp video locker, lock video youtube, unlock video, unlock video youtube, wp unlock video, wp lock video, share videos,wp share videos,wordpress plugin video lock, traffic, viral video, video viral, lock video,wordpress video, video,youtube, social media,social network, video social, viral plugin,wordpress plugin viral, wp plugin viral, wordpress video lock,wordpress video locker, wordpress unlock video,unlock,unlock video,share to unlock,like to unlock,media unlock,facebook, twitter,google plus,google,rtl,plugin rtl
 Author URI: http://es.ilentheme.com
 Author: iLen
-Requires at least: 3.0
+Requires at least: 3.9
 Tested up to: 4.1
 Stable tag: 2.7
-Version: 2.7
+Version: 2.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Donate link:https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ASU4AAQM8N5NL
@@ -50,6 +50,8 @@ The plugin has some customization features, one of the best is that it has stats
 
 
 == Changelog ==
+= 2.8 =
+* Update link for support
 = 2.7 =
 * Update core <code>iLenFramework 2.0</code> minus fixed
 = 2.6 =
