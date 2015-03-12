@@ -40,7 +40,7 @@ class ilen_video_lock_make{
                      'name_option'    =>'ilen_video_lock',
                      'name_plugin_url'=>'ilen-video-locker',
                      'descripcion'    =>'Share your viral videos and get traffic to your website.',
-                     'version'        =>'2.8',
+                     'version'        =>'2.9',
                      'db_version'     =>'1.0',
                      'url'            =>'', 
                      'logo'           =>'<i class="fa fa fa-play" style="padding:10px 10px 9px 15px"></i>',

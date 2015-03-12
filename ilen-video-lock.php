@@ -3,7 +3,7 @@
 Plugin Name: iLen Video Locker
 Plugin URI: https://wordpress.org/plugins/ilen-video-locker/
 Description: Share your viral videos and get traffic to your website.
-Version: 2.8
+Version: 2.9
 Author: iLen
 Author URI:
 */
