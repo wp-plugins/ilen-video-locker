@@ -3,12 +3,10 @@
 Plugin Name: iLen Video Locker
 Plugin URI: https://wordpress.org/plugins/ilen-video-locker/
 Description: Share your viral videos and get traffic to your website.
-Version: 2.9.1
+Version: 2.9.2
 Author: iLen
 Author URI:
 */
-
-
 if ( !class_exists('ilen_video_lock') ) {
 
 define('IVL_PATH',plugin_dir_path( __FILE__ ));
@@ -139,7 +137,7 @@ class ilen_video_lock extends ilen_video_lock_make{
 
         global $option_ilenvideolock;
 
-        wp_enqueue_script('facebook-js', 'https://connect.facebook.net/en_US/all.js#xfbml=1', array('jquery'),$this->parameter['version'],FALSE);
+        wp_enqueue_script('facebook-js', 'https://connect.facebook.net/en_US/asdk.js#version=v2.3&xfbml=1&appId=', array('jquery'),$this->parameter['version'],FALSE);
         
 
         wp_enqueue_style( 'front-'.$this->parameter["name_option"], plugins_url('/assets/css/front.css',__FILE__),'all',$this->parameter['version']);
