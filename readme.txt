@@ -9,7 +9,7 @@ Author: iLen
 Requires at least: 3.9
 Tested up to: 4.2.2
 Stable tag: 2.9.6
-Version: 2.9.7
+Version: 2.9.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Donate link:https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ASU4AAQM8N5NL
@@ -53,6 +53,8 @@ The plugin has some customization features, one of the best is that it has stats
 
 
 == Changelog ==
+= 2.9.8 =
+* Update core <code>iLenFramework 2.5.4</code>
 = 2.9.7 =
 * Chague imagen for share, medium to full
 * Update core <code>iLenFramework 2.5.2</code>
